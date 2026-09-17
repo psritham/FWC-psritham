@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.first-cell {
+    background-color: #bada55;
+    width: 50%;
+}
+
+.second-cell {
+    background-color: #ffb3a7;
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    tr {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    td {
+        width: 100% !important;
+        height: 50%;
+        box-sizing: border-box;
+    }
+}
