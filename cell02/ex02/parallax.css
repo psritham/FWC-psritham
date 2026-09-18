@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ตั้งค่าเอฟเฟกต์ Parallax ด้วย background-attachment: fixed */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* กำหนดรูปภาพพื้นหลัง */
+.img1 {
+    background-image: url('bg1.jpg');
+}
+
+.img2 {
+    background-image: url('bg2.jpg');
+}
+
+/* จัดข้อความให้อยู่ตรงกลางรูปภาพ */
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* บล็อกสีดำตรงกลาง */
+.black-block {
+    color: #ddd;
+    background-color: #000;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.black-block h3 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
